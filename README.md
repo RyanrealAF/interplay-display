@@ -4,6 +4,7 @@ emoji: 👀
 colorFrom: pink
 colorTo: indigo
 sdk: docker
+app_port: 7860
 pinned: false
 license: mit
 short_description: Backend API for audio stem separation and DSP interplay analytics

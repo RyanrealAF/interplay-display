@@ -1,10 +1,10 @@
 fastapi
 uvicorn
 python-multipart
+torch
+torchaudio
 demucs
 librosa
 scipy
 soundfile
-numpy
-torch
-torchaudio
+numpy<2.0.0
