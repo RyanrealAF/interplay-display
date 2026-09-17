@@ -1,0 +1,3 @@
+CLOUDFLARE_PROJECT_NAME=interplay-display
+PAGES_BUILD_OUTPUT_DIR=public
+API_ENDPOINT=https://ryanrealaf-interplay-display.hf.space/api/v1/analyze
