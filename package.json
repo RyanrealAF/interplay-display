@@ -1,0 +1,13 @@
+{
+  "name": "interplay-display",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Interplay-Display Static Frontend & API Documentation",
+  "scripts": {
+    "build": "mkdir -p public && echo 'Static build complete'",
+    "deploy": "wrangler pages deploy public --project-name=interplay-display"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}

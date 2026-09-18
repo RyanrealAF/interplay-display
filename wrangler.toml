@@ -1,3 +1,6 @@
 name = "interplay-display"
 compatibility_date = "2024-09-17"
 pages_build_output_dir = "public"
+
+[assets]
+directory = "./public"
