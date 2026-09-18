@@ -1,16 +1,18 @@
 FROM python:3.9-slim
 
-# Install system dependencies for audio processing
+# Install system dependencies and build tools for audio processing
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ffmpeg \
     libsndfile1 \
     git \
+    build-essential \
+    python3-dev \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 
-# Upgrade pip
-RUN pip install --no-cache-dir --upgrade pip
+# Upgrade pip, setuptools, and wheel
+RUN pip install --no-cache-dir --upgrade pip setuptools wheel
 
 # Install Python dependencies
 COPY requirements.txt .
