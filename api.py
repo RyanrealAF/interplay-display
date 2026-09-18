@@ -28,7 +28,7 @@ separator = demucs.api.Separator(model=MODEL_NAME, device=DEVICE)
 app = FastAPI(title="Interplay-Display SaaS Engine API")
 
 # --- CORS CONFIGURATION ---
-# This allows your custom React/Next.js frontend to talk to this HF Space.
+# This allows your custom React/Next.js frontend to talk to this API server.
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"], # In production, replace "*" with your actual frontend URL (e.g., https://your-vercel-app.com)
@@ -226,5 +226,4 @@ async def analyze_audio(request: Request, file: UploadFile = File(...)):
 
 if __name__ == "__main__":
     import uvicorn
-    # Hugging Face Spaces strictly listens on port 7860 for Docker environments
     uvicorn.run(app, host="0.0.0.0", port=7860)

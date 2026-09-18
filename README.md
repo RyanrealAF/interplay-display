@@ -1,18 +1,6 @@
----
-title: Interplay Display
-emoji: 👀
-colorFrom: pink
-colorTo: indigo
-sdk: docker
-app_port: 7860
-pinned: false
-license: mit
-short_description: Backend API for audio stem separation and DSP interplay analytics
----
-
 # Interplay-Display SaaS Engine API
 
-Backend Python/PyTorch API hosted on Hugging Face Spaces that separates audio into 6 stems (Vocals, Drums, Bass, Guitar, Piano, Other) using Demucs and performs DSP analytics on instrument interplay (rhythmic lock, vocal masking, harmonic clashing).
+Backend Python/PyTorch API that separates audio into 6 stems (Vocals, Drums, Bass, Guitar, Piano, Other) using Demucs and performs DSP analytics on instrument interplay (rhythmic lock, vocal masking, harmonic clashing).
 
 ## Requirements
 

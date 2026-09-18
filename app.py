@@ -1,5 +1,5 @@
 """
-Main application entry point for Hugging Face Spaces / Uvicorn (app:app).
+Main application entry point for Uvicorn (app:app).
 Re-exports the FastAPI app instance from api.py which defines the /api/v1/analyze route.
 """
 from api import app
